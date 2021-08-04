@@ -16,3 +16,6 @@ LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/../Frameworks @loader_pa
 DEFINES_MODULE = NO
 GCC_OPTIMIZATION_LEVEL = s
 SWIFT_OPTIMIZATION_LEVEL = -O
+
+FRAMEWORK_SEARCH_PATHS = $(inherited) $(SRCROOT)/Carthage/Build/
+FRAMEWORK_SEARCH_PATHS[sdk=iphone*] = $(inherited) $(PROJECT_DIR)/Carthage/Build/iOS
